@@ -1,2 +1,2 @@
 # my-portfolio
-behruzberdiyev.netlify.app
+https://behruzberdiyev.netlify.app

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Behruz Berdiyev | Portfolio</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=no"
+		/>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
+		<!-- EmailJS -->
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				// https://dashboard.emailjs.com/admin/account
+				emailjs.init('user_76r5jRtM5Oo3roPYZNtnd');
+			})();
+		</script>
+		<script type="text/javascript">
+			window.onload = function () {
+				document
+					.getElementById('contactace')
+					.addEventListener('submit', function (event) {
+						event.preventDefault();
+						// these IDs from the previous steps
+						emailjs.sendForm('curious-gmail', 'template_ptyftl1', this).then(
+							function () {
+								console.log('SUCCESS!');
+							},
+							function (error) {
+								console.log('FAILED...', error);
+							}
+						);
+					});
+			};
+		</script>
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<a href="#" class="image avatar"
+					><img src="images/avatar.jpg" alt=""
+				/></a>
+				<h1>
+					<strong>Hi, I am Bekhruz👋</strong><br />
+					I am a Web Developer <br />
+					and UI Designer <br />
+					with 2 years of experience.<br />
+					<a
+						href="./images/resume.pdf"
+						class="button icon solid fa-download resume"
+						target="_blank"
+						>MY RESUME</a
+					>
+				</h1>
+			</div>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+			<!-- Navbar -->
+			<nav class="nav">
+				<ul class="nav-links">
+					<a href="./about.html"><li>About</li></a>
+					<a href="./projects.html"><li>Portfolio</li></a>
+					<a href="./courses.html"><li>Courses</li></a>
+					<a href="./index.html#four"><li>Contact</li></a>
+				</ul>
+			</nav>
+
+			<!-- Two -->
+			<section id="two">
+				<header class="major">
+					<h4>
+						<a href="./index.html" class="back">&lt; Back to Home Page</a>
+					</h4>
+					<h2>#courses</h2>
+				</header>
+				<div class="row">
+					<article class="col-6 col-12-xsmall work-item">
+						<a
+							href="https://www.youtube.com/watch?v=yYXzDWQb1A0&list=PLuXgyu_K0dZMl0QB7WNO0NSxTHpicchI6&ab_channel=CuriousBehruz"
+							class="image fit thumb"
+							target="_blank"
+							><img src="images/course-thumb/html5-tolliq-kurs.jpg" alt=""
+						/></a>
+						<h3>HTML5(Full Course)</h3>
+						<p>
+							In this playlist, you can learn HTML, which is the basis of web
+							programming, used to create websites.
+						</p>
+						<p>13 video</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a
+							href="https://www.youtube.com/watch?v=gXYyqcpl3zg&list=PLuXgyu_K0dZOPIaCyq9-3JdfCy5TRyoVX&ab_channel=CuriousBehruz"
+							class="image fit thumb"
+							target="_blank"
+							><img src="images/course-thumb/css3-tolliq-kurs.jpg" alt=""
+						/></a>
+						<h3>CSS3(Full Course)</h3>
+						<p>
+							In this playlist, you can learn the technology CSS used to style a
+							website.
+						</p>
+						<p>22 video</p>
+					</article>
+				</div>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li>
+						<a
+							href="https://instagram.com/madebybehruz"
+							target="_blank"
+							class="icon brands fa-instagram"
+							><span class="label">Instagram</span></a
+						>
+					</li>
+					<li>
+						<a
+							href="https://github.com/Behruz0129"
+							target="_blank"
+							class="icon brands fa-github"
+							><span class="label">Github</span></a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.youtube.com/curiousbehruz?sub_confirmation=1"
+							target="_blank"
+							class="icon brands fa-youtube"
+							><span class="label">YouTube</span></a
+						>
+					</li>
+					<li>
+						<a
+							href="https://t.me/curious_behruz"
+							target="_blank"
+							class="icon brands fa-telegram"
+							><span class="label">Telegram</span></a
+						>
+					</li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Copyright 2021</li>
+					<li>
+						Design:
+						<a href="http://t.me/madebybehruz" target="_blank">@madebybehruz</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
